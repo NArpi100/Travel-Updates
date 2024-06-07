@@ -4,13 +4,13 @@ import pg from "pg";
 
 const app = express();
 const port = 3000;
-
+// Below task related to data can be done within pgAdmin which is the application of postgreSQL
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
-  database: "Narpi",
-  password: "NavArp@100",
-  port: 1732,
+  database: "DataExp",// Create a database within pgAdmin
+  password: "xxxx", // Type your pgAdmin password here
+  port: xxxx, //Give your pgAdmin default port number here
 });
 db.connect();
 
